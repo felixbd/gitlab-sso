@@ -1,4 +1,6 @@
 #+title: gitlab sso
+#+author: Felix Drees
+
 
 * Flask (python) web page using gitlab's sso for oauth
 
