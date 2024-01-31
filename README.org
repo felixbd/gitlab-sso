@@ -1,0 +1,18 @@
+#+title: gitlab sso
+
+* Flask (python) web page using gitlab's sso for oauth
+
+start the app via
+
+#+begin_src shell
+flask run
+#+end_src
+
+
+** requirements
+
+#+begin_src text
+flask
+flask_login
+request
+#+end_src

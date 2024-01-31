@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <!-- link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" -->
+
+    {% block head %}{% endblock head %}
+    
+    <title>{% block title %}TITLE{% endblock title %}</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="http://localhost:5000">INDEX</a>
+            </li>
+            <li>
+                <a href="http://localhost:5000/login">LOG IN</a>
+            </li>
+            <li>
+                <a href="http://localhost:5000/logout">LOG OUT</a>
+            </li>
+            {% if current_user.is_authenticated %}
+                <li>
+                    logged in as {{ current_user.name }} aka {{ current_user.nickname }}  (GitLab ID:{{ current_user.id }})
+                </li>
+            {% endif %}
+        </ul>
+    </nav>
+    <main>
+        {% block main %}main content{% endblock main %}
+    </main>
+</body>
+</html>

@@ -1,0 +1,119 @@
+h1 {
+    border: 2px gray solid;
+    color: gray;
+    text-align: center;
+    padding: 10px;
+}
+
+body {
+    margin-top: 0px;
+    background-color: whitesmoke;
+}
+
+thead,
+tfoot {
+    background-color: rgb(23, 156, 125);
+    color: rgb(180, 220, 211);
+}
+
+tbody {
+    background-color: rgb(109, 191, 169);
+}
+
+caption {
+    padding: 10px;
+    caption-side: top;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    /* font-family: sans-serif; */
+    font-size: .8rem;
+}
+
+td,
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 5px 10px;
+}
+
+td {
+    text-align: center;
+}
+
+img{
+    padding: 10px;
+ }
+
+form {
+    display: table;
+    background-color: rgb(212, 230, 244);
+    margin: 3rem;
+}
+
+form p {
+    display: table-row;
+}
+
+form label {
+    display: table-cell;
+    padding: 5px;
+}
+
+form input {
+    display: table-cell;
+    width: 90%;
+}
+
+form select {
+    display: table-cell;
+    width: 90%;
+}
+
+nav {
+    margin-top: 0px;
+    background: rgb(23, 156, 125);
+}
+
+nav ul {
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: solid white 1px;
+    text-indent: 0em;
+}
+
+nav li:before {
+    content: none;
+}
+
+nav li:first-child {
+    border-left: none;
+}
+
+nav li.navselected {
+    background: red;
+}
+
+nav li:hover {
+    background: red;
+}
+
+nav a:visited {
+    color: rgb(136, 188, 226);
+}
+
+nav a:link {
+    color: #f0f0f0;
+    text-decoration: none;
+}
