@@ -2,7 +2,7 @@
 #+author: Felix Drees
 
 
-* Flask (python) web page using gitlab's sso for oauth
+* Flask APP (python) using gitlab's sso
 
 start the app via
 
